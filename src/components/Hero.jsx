@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useTheme } from './ThemeProvider';
 import { ArrowRight, Play, Database, Server, Cpu, Cloud, Settings } from 'lucide-react';
 
 export default function Hero({ onTriggerScheduler }) {
+  const { theme } = useTheme();
   const [activeNode, setActiveNode] = useState(null);
 
   const handleCTA = () => {
