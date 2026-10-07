@@ -4,44 +4,33 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class', // Toggle dark mode via class="dark" on <html> or <body>
   theme: {
     extend: {
       colors: {
-        // Design system custom HSL mappings mapped to Tailwind colors
         brand: {
-          dark: '#0A0D14',      // Deep Space Charcoal
-          cardDark: '#111622',  // Dark Navy Card BG
-          glassDark: '#171E30', // Glass Accent Card BG
-          light: '#F9FAFB',     // Soft Light Mode BG
-          cardLight: '#FFFFFF', // Clean white card
-          glassLight: '#F3F4F6',// Off-white glass BG
+          blue: '#0755A5',
+          'blue-dark': '#063B78',
+          'blue-light': '#0D8FD3',
+          gray: '#777777',
         },
-        accent: {
-          cyan: '#06B6D4',      // Neon Scalability Glow
-          emerald: '#10B981',   // Trust/Retention Emerald
-          purple: '#8B5CF6',    // Advanced Enterprise Purple
+        text: {
+          dark: '#20252B',
+          muted: '#5A6573',
+        },
+        surface: {
+          light: '#F3F5F7',
+          border: '#E2E7EC',
+          white: '#FFFFFF',
         }
       },
       fontFamily: {
-        headline: ['Outfit', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
       boxShadow: {
-        'glass-dark': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
-        'glass-light': '0 8px 32px 0 rgba(31, 38, 135, 0.08)',
-        'glow-cyan': '0 0 20px rgba(6, 182, 212, 0.15)',
-        'glow-emerald': '0 0 20px rgba(16, 185, 129, 0.15)',
-      },
-      animation: {
-        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'float': 'float 6s ease-in-out infinite',
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
-        }
+        'subtle': '0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px 0 rgba(0, 0, 0, 0.02)',
+        'card': '0 4px 12px 0 rgba(7, 85, 165, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.04)',
+        'card-hover': '0 12px 24px -4px rgba(7, 85, 165, 0.12), 0 4px 8px -2px rgba(0, 0, 0, 0.04)',
+        'header': '0 2px 10px 0 rgba(6, 59, 120, 0.06)',
       }
     },
   },
