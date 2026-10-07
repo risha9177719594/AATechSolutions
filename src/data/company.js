@@ -5,7 +5,7 @@ export const company = {
   positioning: "Specialized Technology Staffing & Talent Solutions",
   description: "A A Tech Solutions provides specialized staffing and talent solutions across SAP, Salesforce, ServiceNow and other enterprise technologies.",
   phone: "+91 8919653470",
-  email: "aatechsolutions0@gmail.com",
+  email: "naveenk@aatechsolutions.in",
   website: "www.aatechsolutions.in",
   address: {
     line1: "1-10-1/255/107, Sai Nagar Colony",
